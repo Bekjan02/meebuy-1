@@ -64,7 +64,7 @@
                     <!-- dropdown menu-->
                     <div class="dropdown mt-[30px] px-2.5 py-[15px] btn-outlined border-[#A0A0A080] hover:bg-transparent lg-md:hidden">
                         <button class="dropdown__btn px-2.5 w-full  flex items-center justify-between text-dark-text">
-                            <p class="text-lg font-bold">Моя компания</p>
+                            <p class="text-lg font-bold">Избранные</p>
                             <img class="w-5 h-5" src="{% static 'assets/images/icons/ios-arrow.svg' %}" alt="">
                         </button>
                         <ul class="dropdown__menu h-0 text-dark-text overflow-hidden transition-all duration-300 ease-in text-lg">
@@ -90,7 +90,7 @@
                                 <a href="{% url 'balance' %}">Баланс</a>
                             </li>
                             <li class="dropdown__item">
-                                <a href="{% url 'favorites' %}">Избранные</a>
+                                <a href="{% url 'view_profile' %}">Моя компания</a>
                             </li>
                             <li class="dropdown__item">
                                 <a href="{% url 'send_message' %}">Служба поддержки</a>
